@@ -1,0 +1,22 @@
+Manifest-Version: 1.0
+Bundle-ManifestVersion: 2
+Bundle-Name: HiveReader-Node extension for KNIME Workbench
+Bundle-SymbolicName: jp.co.recruit.hadoop.knime.reader;singleton:=true
+Bundle-Version: 0.1.5
+Bundle-Activator: jp.co.recruit.hadoop.knime.reader.HiveReaderNodePlugin
+Bundle-Vendor: Takeshi NAKANO
+Require-Bundle: org.eclipse.core.runtime,
+ org.knime.workbench.core,
+ org.knime.workbench.repository,
+ org.knime.base
+Bundle-ActivationPolicy: lazy
+Export-Package: jp.co.recruit.hadoop.knime.reader;
+  uses:="org.eclipse.core.runtime,
+   org.knime.core.node,
+   javax.swing,
+   org.knime.core.node.port.database,
+   org.knime.base.node.io.database,
+   org.osgi.framework,
+   org.knime.core.data"
+Bundle-ClassPath: hivereader.jar
+
